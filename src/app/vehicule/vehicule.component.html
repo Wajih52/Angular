@@ -1,0 +1,17 @@
+<p >vehicule works!</p>
+
+
+
+<div [hidden]="hideDiv">
+  <h1>{{1+15}}</h1>
+  <h2>{{x}}</h2>
+  <h1>nom:{{person.nom}}</h1>
+  <h1>prenom:{{person.prenom}}</h1>
+  <h1>age:{{person.age}}</h1>
+  <h1>adresse e-mail:{{getEmail()}}</h1>
+  <button [disabled]="etat" (click)="message()">{{b}}</button>
+</div>
+<h1 id="100" [style.color]="c" >{{msg}}</h1><br><hr>
+<input type="text" name="nom" placeholder="nom"  #v>
+<h2 [style.color]="c">Sara Alouane 4émè Bac Economie </h2>
+<button (click)="changeCol(v.value)">essayer</button>
